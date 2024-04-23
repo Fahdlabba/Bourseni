@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --main-color : #3F72AF;
+    --second-color : #F9F7F7;
+    --third-color : #DBE2EF;
+    --forth-color : #0f0f0f;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    position: relative;
+    height: 50%;
+}
+.nav {
+    display: flex;
+    background-color: var(--third-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10%;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.nav-title h1 {
+    color: var(--forth-color);
+
+}
+.nav-items ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.nav-items ul li {
+    margin: 0 4%;;
+}
+.nav-items ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--forth-color);
+}
+
+
+.landing{
+    background-image: url("./src/cours-a-distance-scaled.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 93vh;
+}
+.left-slide{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5%;
+}
+
+.landing-content{
+    width: 50%;
+    font-size: 1.3rem;
+    padding: 1% 0;
+    font-weight: 500;
+}
+
+.about{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+.about-title{
+    margin: 2% 0;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 7%;
+}
+.about-content p {
+    width: 70%;
+    font-size: 1.5rem;
+}
+.logo img {
+    width: 25vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offre{
+    background-color: var(--third-color);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offre-title{
+    font-size: 1.5rem;
+    color: var(--forth-color);
+    padding: 2% 0;
+}
+.offre-content{
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 4% 1%;
+}
+.bac , .master , .doctorat {
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    height: 35vh;
+    width: 30%;
+}
+.title{
+    margin: 2% 0;
+    text-align: center;
+}
+.content{
+    width: 50%;
+    margin: 4% 0;
+}
+.content a {
+    text-align: center;
+    color: var(--forth-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: var(--third-color);
+    padding: 2% 3%;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 50vh;
+  }
+
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sw-title{
+    text-align: center;
+    margin: 2% 0;
+    font-size: 1.5rem;
+}
+
+.footer{
+    background-color: var(--third-color);
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+.left-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-footer img {
+    width: 5vh;
+    border-radius: 5px;
+}
+.left-footer h2 {
+    margin: 0 5%;
+}
+.right-footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    list-style: none;
+    margin: 2% 0;
+}
+.middle-footer{
+    margin: 1% 0;
+}
