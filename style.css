@@ -25,7 +25,12 @@ html,body{
     padding: 1% 10%;
     box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.1);
 }
+.nav-title {
+    display: flex;
+}
+
 .nav-title h1 {
+    margin-left: 1%;
     color: var(--forth-color);
 
 }
@@ -36,7 +41,7 @@ html,body{
     list-style: none;
 }
 .nav-items ul li {
-    margin: 0 4%;;
+    margin: 0 3%;;
 }
 .nav-items ul li a {
     text-decoration: none;
@@ -44,11 +49,21 @@ html,body{
     color: var(--forth-color);
 }
 
+#loginB{
+    background-color: var(--second-color);
+    color: #000;
+    padding: 10% 20%;
+    border-radius: 14px;
+    font-size: 1.4rem;
+    font-weight: 500
+
+}
+
 
 .landing{
-    background-image: url("./src/cours-a-distance-scaled.jpg");
+    /*background-image: url("./src/cours-a-distance-scaled.jpg");
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     height: 93vh;
 }
 .left-slide{
@@ -90,54 +105,56 @@ html,body{
 .logo img {
     width: 25vh;
 }
+.avis{
+    background-color: var(--second-color);
+    height: 48vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 .offre{
     background-color: var(--third-color);
-    height: 60vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.offre-title{
+.offre-title,.avis-title{
+    text-align: center;
     font-size: 1.5rem;
     color: var(--forth-color);
-    padding: 2% 0;
+    padding: 1% 0;
 }
-.offre-content{
+.offre-content,.avis-content{
     width: 80%;
     height: 20vh;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 4% 1%;
+    padding: 3% 1%;
 }
-.bac , .master , .doctorat {
+
+.bac , .master , .doctorat{
     display: flex;
-    flex-direction: column;;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: var(--second-color);
     border-radius: 20px;
-    height: 35vh;
+    height: 25vh;
+    width: 30%;
+}
+.usr1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;;
+    align-items: center;
+    background-color: var(--third-color);
+    border-radius: 20px;
+    height: 28vh;
+    margin: 0 1%;
     width: 30%;
 }
 .title{
@@ -145,10 +162,11 @@ html,body{
     text-align: center;
 }
 .content{
-    width: 50%;
+    width: 80%;
     margin: 4% 0;
 }
 .content a {
+    margin: 0 3%;
     text-align: center;
     color: var(--forth-color);
     text-decoration: none;
@@ -158,12 +176,19 @@ html,body{
     border-radius: 10px;
     font-weight: 500;
 }
+.content p {
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 7%;
+}
 
 
 
 .swiper {
+    background-color: var(--third-color);
     width: 100%;
     height: 50vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   }
 
 
@@ -209,7 +234,7 @@ html,body{
 }
 
 .footer{
-    background-color: var(--third-color);
+    background-color: var(--second-color);
 }
 .footer-content{
     display: flex;
@@ -242,4 +267,22 @@ li {
 }
 .middle-footer{
     margin: 1% 0;
+}
+
+
+
+.usr1-img i  {
+    font-size: 5rem;
+    color: var(--forth-color);
+}
+.usr1-content h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--forth-color);
+    margin: 2% 0;
+}
+.usr1-content p {
+    font-size: 1.3rem;
+    color: var(--forth-color);
+    margin: 3% 3%;
 }
