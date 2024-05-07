@@ -25,7 +25,9 @@ const progressCircle = document.querySelector(".autoplay-progress svg");
 
 
 
-
+AOS.init({
+  delay: 200,
+});
 
 
 

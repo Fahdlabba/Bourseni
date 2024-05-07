@@ -61,9 +61,9 @@ html,body{
 
 
 .landing{
-    /*background-image: url("./src/cours-a-distance-scaled.jpg");
+    background-image: url("./src/cours-a-distance-scaled.jpg");
     background-repeat:no-repeat;
-    background-size: cover;*/
+    background-size: cover;
     height: 93vh;
 }
 .left-slide{
