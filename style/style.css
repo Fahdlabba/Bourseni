@@ -41,12 +41,19 @@ html,body{
     list-style: none;
 }
 .nav-items ul li {
-    margin: 0 3%;;
+    margin: 0 2%;;
 }
 .nav-items ul li a {
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--forth-color);
+}
+.nav-items ul select {
+    background-color: var(--third-color);
+    color: var(--forth-color);
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
 }
 
 #loginB{
@@ -146,7 +153,7 @@ html,body{
     height: 25vh;
     width: 30%;
 }
-.usr1{
+.usr1 , .usr2 , .usr3 , .usr4{
     display: flex;
     justify-content: center;
     flex-direction: column;;
@@ -271,7 +278,7 @@ li {
 
 
 
-.usr1-img i  {
+.usr1-img   i  {
     font-size: 5rem;
     color: var(--forth-color);
 }
