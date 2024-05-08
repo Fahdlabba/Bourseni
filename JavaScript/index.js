@@ -71,11 +71,10 @@ let offersDoctorat = document.querySelector(".doctorat");
 let avisText = document.querySelector(".avis-title");
 //get all div with class name usr1
 
-let avisContentUsr1 = document.querySelector(".usr1");
-let avisContentUsr2 = document.querySelector(".usr2");
-let avisContentUsr3 = document.querySelector(".usr3");
-let avisContentUsr4 = document.querySelector(".usr4");
-
+let p1= document.querySelector("#p1");
+let p2= document.querySelector("#p2");
+let p3= document.querySelector("#p3");
+let p4= document.querySelector("#p4");
 
 let univText = document.querySelector(".sw-title");
 
@@ -96,10 +95,11 @@ function ChangeLanguagetoEnglosh() {
   offersDoctorat.children[1].children[1].textContent ="For further information!";
 
   avisText.children[0].textContent = "Reviews";
-  avisContentUsr1.children[1].children[1].textContent = "I am very happy to have received a scholarship from Bourseni. This scholarship allowed me to pursue my studies in France and I am very grateful for this opportunity.";
-  avisContentUsr2.children[1].children[1].textContent = "I am very grateful to Bourseni for helping me finance my Master's studies abroad. Thanks to this scholarship, I was able to realize my dream of studying abroad!";
-  avisContentUsr3.children[1].children[1].textContent = "I highly recommend Bourseni to all Tunisian doctoral students who wish to finance their thesis abroad. Thanks to this grant, I was able to carry out my research project in the best conditions!";
-  avisContentUsr4.children[1].children[1].textContent = "Thanks to Bourseni, I was able to obtain a scholarship to continue my studies abroad. I highly recommend this program to all ambitious Tunisian students!";
+  p1.textContent = "I am very grateful for the scholarship I received from Bourseni. It has allowed me to pursue my studies in the field of my choice without worrying about financial constraints. I highly recommend it!";
+  p2.textContent = "Thanks to Bourseni, I was able to complete my master's degree in a prestigious university abroad. The scholarship covered all my expenses and allowed me to focus on my studies.";
+  p3.textContent = "I am very satisfied with the scholarship I received from Bourseni. It has enabled me to pursue my doctoral studies in a renowned institution without any financial worries. I am grateful for this opportunity.";
+  p4.textContent = "I would like to thank Bourseni for the scholarship I received. It has allowed me to pursue my studies in a prestigious university and has opened up new opportunities for me. I am very grateful for this support.";
+  
   univText.children[0].textContent = "Our Partner Universities";
 }
 language.addEventListener("change", () => {
@@ -126,10 +126,11 @@ language.addEventListener("change", () => {
     
     
     avisText.children[0].textContent = "Avis";
-    avisContentUsr1.children[1].children[1].textContent = "Je suis très heureux d'avoir reçu une bourse de Bourseni. Cette bourse m'a permis de poursuivre mes études en France et je suis très reconnaissant pour cette opportunité.";
-    avisContentUsr2.children[1].children[1].textContent = "Je suis très reconnaissant à Bourseni de m'avoir aidé à financer mes études de Master à l'étranger. Grâce à cette bourse, j'ai pu réaliser mon rêve d'étudier à l'étranger !";
-    avisContentUsr3.children[1].children[1].textContent = "Je recommande vivement Bourseni à tous les doctorants tunisiens qui souhaitent financer leur thèse à l'étranger. Grâce à cette bourse, j'ai pu réaliser mon projet de recherche dans les meilleures conditions !";
-    avisContentUsr4.children[1].children[1].textContent = "Grâce à Bourseni, j'ai pu obtenir une bourse pour poursuivre mes études à l'étranger. Je recommande vivement ce programme à tous les étudiants tunisiens ambitieux !";
+    p1.textContent = "Je suis très reconnaissant pour la bourse que j'ai reçue de Bourseni. Elle m'a permis de poursuivre mes études dans le domaine de mon choix sans me soucier des contraintes financières. Je la recommande vivement !";
+    p2.textContent = "Grâce à Bourseni, j'ai pu terminer mon master dans une université prestigieuse à l'étranger. La bourse a couvert toutes mes dépenses et m'a permis de me concentrer sur mes études.";
+    p3.textContent = "Je suis très satisfait de la bourse que j'ai reçue de Bourseni. Elle m'a permis de poursuivre mes études doctorales dans une institution renommée sans aucune inquiétude financière. Je suis reconnaissant pour cette opportunité.";
+    p4.textContent = "Je tiens à remercier Bourseni pour la bourse que j'ai reçue. Elle m'a permis de poursuivre mes études dans une université prestigieuse et m'a ouvert de nouvelles opportunités. Je suis très reconnaissant pour ce soutien.";
+    
     univText.children[0].textContent = "Nos Universités Partenaires";
   }
 })
